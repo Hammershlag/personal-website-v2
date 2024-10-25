@@ -1,7 +1,7 @@
 .Link a {
     text-decoration: none;
     color: white;
-    transition: color 1s linear, text-decoration 5s linear;
+    transition: color 0.5s linear;
 }
 
 .Link hr {
@@ -9,12 +9,12 @@
     padding-top: 0;
     width: 0;
     display: block;
-    transition: width 1s linear, transform 1s linear, background-color 1s linear;
+    transition: width 0.25s linear, transform 0.5s linear, background-color 0.5s linear;
     transform-origin: center;
 }
 
 .Link:hover hr {
-    background-color: #f1c40f;
+    background-color: var(--element_hover);
     width: 100%;
     transform: scaleX(1);
 }

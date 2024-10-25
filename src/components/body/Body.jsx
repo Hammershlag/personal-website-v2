@@ -20,7 +20,10 @@ function Body() {
             <div className={styles.Body}>
                 <div className={styles.AboutMe}>
                     <h2 className='Grayable' id="about">About Me</h2>
-
+                    <span className='Grayable'>📖 <span className='Hoverable'>21 years</span> old <span className='Hoverable'>Computer Science</span> student on my <span className='Hoverable'>3rd</span> year </span>
+                    <span className='Grayable'>🧠 Currently studying at <span className='Hoverable'>Warsaw University of Technology</span> </span>
+                    <span className='Grayable'>🌍 I speak <span className='Hoverable'>Polish</span> natively, <span className='Hoverable'>English</span> at C1 level, <span className='Hoverable'>German</span> at B2 level </span>
+                    <span className='Grayable'>🥋 Recreationally, I train <span className='Hoverable'>Martial Arts</span>, and I'm a certified <span className='Hoverable'>Scuba Diver</span> </span>
                 </div>
                 <div className={styles.TechnologyStack}>
                     <h2 className='Grayable' id="skills">Technology Stack</h2>
