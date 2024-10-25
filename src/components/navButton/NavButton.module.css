@@ -1,0 +1,20 @@
+.Link a {
+    text-decoration: none;
+    color: white;
+    transition: color 1s linear, text-decoration 5s linear;
+}
+
+.Link hr {
+    margin-top: 0;
+    padding-top: 0;
+    width: 0;
+    display: block;
+    transition: width 1s linear, transform 1s linear, background-color 1s linear;
+    transform-origin: center;
+}
+
+.Link:hover hr {
+    background-color: #f1c40f;
+    width: 100%;
+    transform: scaleX(1);
+}

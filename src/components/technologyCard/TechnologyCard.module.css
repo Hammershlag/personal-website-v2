@@ -1,0 +1,83 @@
+/* src/components/technologyCard/TechnologyCard.module.css */
+.TechnologyCard {
+    width: 250px;
+    height: 50px;
+    background-color: var(--background_secondary);
+    border: 2px solid var(--text);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.Info * {
+    margin: 0;
+    padding: 0;
+}
+
+.Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+    gap: 5px;
+}
+
+.Info span {
+    font-size: 11px;
+    text-align: right;
+}
+
+.Logo {
+    width: 40px;
+    height: 40px;
+}
+
+.Logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.RankTitle {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Stars {
+    display: flex;
+    align-items: center;
+}
+
+.Star, .HalfStar, .EmptyStar {
+    font-size: 16px;
+}
+
+.Star, .HalfStar {
+    color: gold;
+}
+
+.EmptyStar {
+    color: lightgray;
+}
+
+.HalfStar {
+    position: relative;
+    color: lightgray;
+}
+
+.HalfStar::before {
+    content: '★';
+    color: gold;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+}

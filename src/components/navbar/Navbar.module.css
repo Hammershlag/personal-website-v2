@@ -1,0 +1,84 @@
+.Nav {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+}
+
+.LeftSection {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.RightSection {
+}
+
+.Name {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.Links {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 1rem;
+    color: white;
+}
+
+.Logo img{
+    width: auto;
+    height: 80px;
+}
+
+.Mobile {
+    display: none;
+}
+
+.Menu {
+    display: none;
+    background-color: green;
+    position: relative;
+    top: 80px;
+}
+
+.MenuToggleCheckbox:checked ~ .Menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.MenuToggleCheckbox {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.MenuToggle {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .Desktop {
+        display: none;
+    }
+
+    .Mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
