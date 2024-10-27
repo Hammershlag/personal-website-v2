@@ -54,7 +54,7 @@ function Navbar() {
                     </div>
                 </div>
             </nav>
-            <div style={{height: '100px', width: '100vw'}}/>
+            <div style={{height: '100px', width: '95vw'}}/>
         </>
     );
 }
