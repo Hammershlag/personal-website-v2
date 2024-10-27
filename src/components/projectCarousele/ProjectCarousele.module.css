@@ -1,0 +1,33 @@
+.ProjectCarousele {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 80vw;
+    height: 250px;
+    position: relative;
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+.LeftZone {
+    background: var(--background);
+    height: 75%;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.ProjectList {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.RightZone {
+    background: var(--background);
+    height: 100%;
+    flex-grow: 3;
+}

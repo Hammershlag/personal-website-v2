@@ -1,0 +1,44 @@
+.ProjectCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--background_secondary);
+    padding: 10px;
+    width: 350px;
+    height: 450px;
+}
+
+.Tags, .Completed, .DetailsButton {
+    display: none;
+    gap: 5px;
+}
+
+.ProjectCard:hover .Tags,
+.ProjectCard:hover .Completed,
+.ProjectCard:hover .DetailsButton {
+    display: flex;
+
+}
+
+.ProjectCard h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.Image {
+
+}
+
+.Tags {
+
+}
+
+.Tag {
+
+}
+
+.DetailsButton {
+
+}

@@ -12,6 +12,8 @@ import gitLogo from '../../static/git-logo.png';
 import htmlLogo from '../../static/html-logo.png';
 import cssLogo from '../../static/css-logo.png';
 import javascriptLogo from '../../static/javascript-logo.png';
+import ProjectCard from "../projectCard/ProjectCard";
+import ProjectCarousele from "../projectCarousele/ProjectCarousele";
 
 
 function Body() {
@@ -77,8 +79,12 @@ function Body() {
                             scale={4}
                         />
                     </div>
+                    <a href={'#'} className='Grayable'>See more...</a>
                 </div>
-
+                <div className={styles.Portfolio}>
+                    <h2 className='Grayable' id="portfolio">Portfolio</h2>
+                    <ProjectCarousele/>
+                </div>
                 <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
                 <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
                 <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>

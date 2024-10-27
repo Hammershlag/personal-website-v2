@@ -1,0 +1,104 @@
+
+.ProjectItem input[type="radio"] {
+    display: none;
+}
+
+.ProjectItem label {
+    display: block;
+    color: var(--text);
+    height: 50px;
+    width: 13vw;
+    line-height: 50px;
+    text-align: right;
+    position: relative;
+    padding-right: 10px;
+}
+
+.ProjectItem label:hover {
+    color: var(--element_hover);
+    cursor: pointer;
+}
+
+.Tag {
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.Tag:hover {
+    font-size: 1.2rem;
+    padding: 0 0;
+}
+
+.Tags {
+
+}
+
+.Content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    color: var(--text);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slideout 0.75s forwards;
+    gap: 10px;
+    overflow-y: auto;
+
+}
+
+.ProjectItem input[type="radio"]:checked + label {
+    animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.ProjectItem input[type="radio"]:checked + label.LabelElement {
+    color: var(--element_hover);
+    border-right: 5px solid var(--element_hover);
+}
+
+.ProjectItem input[type="radio"]:checked ~ .Content {
+    animation: slidein 0.75s forwards;
+}
+
+.ProjectItem input[type="radio"]:not(:checked) ~ .Content {
+    animation: slideout 0.75s forwards;
+}
+
+
+@keyframes slidein {
+    0% {
+        right: -200vw;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideout {
+    0% {
+        right: 0;
+        opacity: 1;
+    }
+    100% {
+        right: -200vw;
+        opacity: 0;
+    }
+}
+
+.Content::-webkit-scrollbar {
+    width: 15px;
+}
+
+.Content::-webkit-scrollbar-track {
+    background: var(--background_secondary);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.Content::-webkit-scrollbar-thumb {
+    background: var(--element_hover);
+}

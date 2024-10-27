@@ -15,11 +15,22 @@
     width: 80%;
 }
 
-.AboutMe {
+.AboutMe, .TechnologyStack, .Portfolio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.Portfolio {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.ProjectCardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     gap: 20px;
-    width: 80%;
+    flex-wrap: nowrap;
 }
