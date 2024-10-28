@@ -35,15 +35,14 @@ span {
   color: var(--element_hover);
 }
 
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 10px;
 }
 
-html::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   background: var(--background_secondary);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-html::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background: var(--element_hover);
 }

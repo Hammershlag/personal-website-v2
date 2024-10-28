@@ -18,3 +18,8 @@
     width: 100%;
     transform: scaleX(1);
 }
+
+.Active a {
+    font-weight: bold;
+    color: var(--element_hover_secondary);
+}

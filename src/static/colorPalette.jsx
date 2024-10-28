@@ -4,6 +4,7 @@ const colorPalette = {
     text_hover: '#ffffff',
     text: '#aaaaaa',
     element_hover: '#f1c40f',
+    element_hover_secondary: '#a08c0a',
 }
 
 export default colorPalette;

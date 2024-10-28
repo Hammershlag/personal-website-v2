@@ -12,11 +12,43 @@ import gitLogo from '../../static/git-logo.png';
 import htmlLogo from '../../static/html-logo.png';
 import cssLogo from '../../static/css-logo.png';
 import javascriptLogo from '../../static/javascript-logo.png';
-import ProjectCard from "../projectCard/ProjectCard";
 import ProjectCarousele from "../projectCarousele/ProjectCarousele";
+import {useEffect} from "react";
 
 
-function Body() {
+function Body(props) {
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = [
+                { id: 'about', element: document.getElementById('about') },
+                { id: 'skills', element: document.getElementById('skills') },
+                { id: 'portfolio', element: document.getElementById('portfolio') }
+            ];
+
+            let closestSection = null;
+            let minDistance = Infinity;
+
+            sections.forEach(section => {
+                const topPosition = section.element.getBoundingClientRect().top;
+                if (topPosition >= 80 && topPosition < minDistance) {
+                    closestSection = section.id;
+                    minDistance = topPosition;
+                }
+            });
+
+            if (closestSection) {
+                props.setLastVisible(closestSection);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return(
         <>
             <div className={styles.Body}>
@@ -85,47 +117,6 @@ function Body() {
                     <h2 className='Grayable' id="portfolio">Portfolio</h2>
                     <ProjectCarousele/>
                 </div>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
-                <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
                 <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
                 <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
                 <p className='Grayable'>This is some <span className='Hoverable'>random</span> paragraph</p>
