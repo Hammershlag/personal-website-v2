@@ -3,10 +3,7 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Body from "./components/body/Body";
 import {useEffect, useState} from "react";
-
-function Footer() {
-  return null;
-}
+import Footer from "./components/footer/Footer";
 
 function App() {
 

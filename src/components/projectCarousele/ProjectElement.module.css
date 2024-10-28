@@ -96,3 +96,22 @@
     }
 }
 
+.DetailsButton {
+    background-color: var(--background_secondary);
+    color: var(--text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.DetailsButton:hover {
+    background-color: var(--element_hover);
+    color: var(--background_secondary);
+    cursor: pointer;
+}
+
+.DetailsButton:active {
+    transform: scale(0.95);
+}
+

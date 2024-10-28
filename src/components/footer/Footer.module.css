@@ -1,0 +1,13 @@
+.Footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+}
+
+.Footer:hover {
+    color: var(--text_hover);
+}

@@ -127,16 +127,19 @@ function Body(props) {
                 </div>
                 <div className={styles.Contact}>
                     <h2 className='Grayable' id="contact">Contact</h2>
-                    <span className='Grayable'>Thank you for visiting my portfolio!
+                    <span className='Grayable'>
+                        <span className={'Hoverable'}>Thank you</span> for visiting my portfolio!
                         If you have any questions, project ideas, or just want to connect,
-                        feel free to reach out. I’m available via email or on social media,
+                        feel free to reach out. I’m available via
+                        <span className={'Hoverable'}> email</span> or on
+                        <span className={'Hoverable'}> social media</span>,
                         and I’m always open to new opportunities.
                         Although you may view this website in various languages,
                         I prefer communicating in English for the best clarity and collaboration
                     </span>
                     <div className={styles.ContactContainer}>
                         <ContactButton title={'Send me an email'} link={'mailto:tomekzbroszczyk@gmail.com'} image={emailLogo}/>
-                        <ContactButton title={'Visit my LinkedId'} link={'https://www.linkedin.com/in/tomasz-zbroszczyk-61b316278/'} image={linkedInLogo}/>
+                        <ContactButton title={'Visit my LinkedIn'} link={'https://www.linkedin.com/in/tomasz-zbroszczyk-61b316278/'} image={linkedInLogo}/>
                         <ContactButton title={'See my work on Github'} link={'https://github.com/Hammershlag'} image={githubLogo}/>
                         <ContactButton title={'Visit my Facebook'} link={'https://www.facebook.com/tomasz.zbroszczyk.7/'} image={facebookLogo}/>
                         <ContactButton title={'Follow me on Instagram'} link={'https://www.instagram.com/tzbroszczyk/'} image={instagramLogo  }/>
