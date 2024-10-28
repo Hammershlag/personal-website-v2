@@ -4,14 +4,14 @@ import styles from './Body.module.css';
 
 import TechnologyCard from "../technologyCard/TechnologyCard";
 
-import springLogo from '../../static/spring-logo.png';
-import javaLogo from '../../static/java-logo.png';
-import reactLogo from '../../static/react-logo.png';
-import dockerLogo from '../../static/docker-logo.png';
-import gitLogo from '../../static/git-logo.png';
-import htmlLogo from '../../static/html-logo.png';
-import cssLogo from '../../static/css-logo.png';
-import javascriptLogo from '../../static/javascript-logo.png';
+import springLogo from '../../static/logos/spring-logo.png';
+import javaLogo from '../../static/logos/java-logo.png';
+import reactLogo from '../../static/logos/react-logo.png';
+import dockerLogo from '../../static/logos/docker-logo.png';
+import gitLogo from '../../static/logos/git-logo.png';
+import htmlLogo from '../../static/logos/html-logo.png';
+import cssLogo from '../../static/logos/css-logo.png';
+import javascriptLogo from '../../static/logos/javascript-logo.png';
 import ProjectCarousele from "../projectCarousele/ProjectCarousele";
 import {useEffect} from "react";
 
