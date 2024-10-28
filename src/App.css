@@ -1,6 +1,14 @@
+html {
+  background-color: var(--background);
+  min-width: 425px;
+}
+
+body {
+  min-width: 425px;
+}
+
 .App {
   text-align: center;
-  background-color: var(--background);
   display: flex;
   flex-direction: column;
   min-height: 100vh;

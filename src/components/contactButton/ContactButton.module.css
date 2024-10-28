@@ -1,0 +1,19 @@
+.ContactButton {
+    padding: 10px;
+    transition: padding 0.5s;
+}
+
+.ContactButton a img {
+    width: 35px;
+    height: 35px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.ContactButton:hover a img {
+    width: 45px;
+    height: 45px;
+}
+
+.ContactButton:hover {
+    padding: 5px;
+}
