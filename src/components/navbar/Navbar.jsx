@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from 'react';
 import styles from './Navbar.module.css';
 import '../../App.css';
-import logo from '../../static/logos/logo1024.png';
+import logo from '../../static/logo1024.png';
 import NavButton from "../navButton/NavButton";
 
 function Navbar(props) {

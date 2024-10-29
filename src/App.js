@@ -9,10 +9,6 @@ function App() {
 
     const [lastVisible, setLastVisible] = useState('about')
 
-    useEffect(() => {
-        console.log('App:', lastVisible)
-    }, [lastVisible]);
-
     return (
       <>
           <div className="App">

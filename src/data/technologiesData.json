@@ -1,0 +1,135 @@
+[
+  {
+    "title": "Spring",
+    "description": "Java framework for enterprise applications",
+    "logo": "/logos/technologies/spring-logo.png",
+    "scale": 4,
+    "top": true
+  },
+  {
+    "title": "Java",
+    "description": "Java programming language",
+    "logo": "/logos/technologies/java-logo.png",
+    "scale": 5,
+    "top": true
+  },
+  {
+    "title": "React",
+    "description": "JavaScript library for building user interfaces",
+    "logo": "/logos/technologies/react-logo.png",
+    "scale": 3.5,
+    "top": true
+  },
+  {
+    "title": "Docker",
+    "description": "Containerization platform",
+    "logo": "/logos/technologies/docker-logo.png",
+    "scale": 4,
+    "top": true
+  },
+  {
+    "title": "Git",
+    "description": "Version control system",
+    "logo": "/logos/technologies/git-logo.png",
+    "scale": 4.5,
+    "top": true
+  },
+  {
+    "title": "HTML",
+    "description": "Hypertext Markup Language",
+    "logo": "/logos/technologies/html-logo.png",
+    "scale": 4,
+    "top": true
+  },
+  {
+    "title": "CSS",
+    "description": "Cascading Style Sheets",
+    "logo": "/logos/technologies/css-logo.png",
+    "scale": 4,
+    "top": true
+  },
+  {
+    "title": "JavaScript",
+    "description": "Programming language",
+    "logo": "/logos/technologies/javascript-logo.png",
+    "scale": 4,
+    "top": true
+  },
+  {
+    "title": "C",
+    "description": "General-purpose programming language",
+    "logo": "/logos/technologies/c-logo.png",
+    "scale": 3.5,
+    "top": false
+  },
+  {
+    "title": "C++",
+    "description": "Object-oriented programming language",
+    "logo": "/logos/technologies/c-pp-logo.png",
+    "scale": 3.5,
+    "top": false
+  },
+  {
+    "title": "Python",
+    "description": "High-level programming language",
+    "logo": "/logos/technologies/python-logo.png",
+    "scale": 3.5,
+    "top": false
+  },
+  {
+    "title": "C#",
+    "description": "Microsoft's programming language",
+    "logo": "/logos/technologies/c-sharp-logo.png",
+    "scale": 4,
+    "top": false
+  },
+  {
+    "title": "Assembly",
+    "description": "Low-level programming language",
+    "logo": "/logos/technologies/assembly-logo.png",
+    "scale": 1.5,
+    "top": false
+  },
+  {
+    "title": "UNIX",
+    "description": "Operating system",
+    "logo": "/logos/technologies/unix-logo.jpg",
+    "scale": 4,
+    "top": false
+  },
+  {
+    "title": "Linux",
+    "description": "Open-source operating system",
+    "logo": "/logos/technologies/linux-logo.png",
+    "scale": 4,
+    "top": false
+  },
+  {
+    "title": "LaTeX",
+    "description": "Document preparation system",
+    "logo": "/logos/technologies/latex-logo.png",
+    "scale": 3.5,
+    "top": false
+  },
+  {
+    "title": "MATLAB",
+    "description": "Numerical computing environment",
+    "logo": "/logos/technologies/matlab-logo.png",
+    "scale": 4,
+    "top": false
+  },
+  {
+    "title": "SQL",
+    "description": "Database query language",
+    "logo": "/logos/technologies/sql-logo.png",
+    "scale": 4.5,
+    "top": false
+  },
+  {
+    "title": "NoSQL",
+    "description": "Non-relational database",
+    "logo": "/logos/technologies/cassandra-logo.png",
+    "scale": 3.5,
+    "top": false
+  }
+]
