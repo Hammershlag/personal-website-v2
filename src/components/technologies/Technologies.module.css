@@ -13,3 +13,32 @@
     gap: 10px;
     flex-wrap: nowrap;
 }
+
+.FilterContainer * {
+    color: var(--text);
+}
+.SubOption {
+    padding: 4px 8px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+.OptGroup .DropdownOption {
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.OptGroup .DropdownOption:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show sub-options when the group is expanded */
+.OptGroup.Expanded .SubOption {
+    display: block; /* Show sub-options when the group is expanded */
+}
+
+.Selected {
+    background-color: #e0e0e0;
+}
+

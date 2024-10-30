@@ -43,7 +43,6 @@ function ProjectCarousele() {
                             tags={project.tags}
                             completed={project.completed}
                             completionDate={project.completionData}
-                            learnMore={() => console.log(`Learn More about ${project.title}`)}
                             value={project.value}
                             selectedItem={selectedItem}
                             setSelectedItem={setSelectedItem}

@@ -1,0 +1,14 @@
+{
+    "Programming Languages": ["Object Oriented Programming Languages","Java", "JavaScript"],
+    "Frameworks and Libraries": ["Framework", "Library"],
+    "Backend": ["Enterprise", "Backend"],
+    "Frontend": ["Frontend", "Style Sheets", "Markup Language"],
+    "DevOps": ["Containerization", "DevOps", "Version Control"],
+    "Databases": {
+      "Relational": ["Database", "Query Language"],
+      "Non-relational": ["Non-relational"]
+    },
+    "Scientific Computing": ["Data Science", "Numerical Computing"],
+    "System Programming": ["System Programming", "Operating System"],
+    "Document Preparation and Typesetting": ["Document Preparation", "Typesetting"]
+}
