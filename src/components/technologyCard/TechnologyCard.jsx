@@ -25,9 +25,9 @@ function TechnologyCard(props) {
 
     return (
         <div className={styles.TechnologyCard}>
-            <div className={styles.Logo}>
-                <img src={props.logo} alt={props.title} />
-            </div>
+            {/*<div className={styles.Logo}>*/}
+            {/*    <img src={props.logo} alt={props.title} />*/}
+            {/*</div>*/}
             <div className={styles.Info}>
                 <div className={styles.RankTitle}>
                     <h4 className='Hoverable'>{props.title}</h4>
