@@ -25,9 +25,9 @@ function TechnologyCard(props) {
 
     return (
         <div className={styles.TechnologyCard}>
-            {/*<div className={styles.Logo}>*/}
-            {/*    <img src={props.logo} alt={props.title} />*/}
-            {/*</div>*/}
+            <div className={styles.Logo}>
+                <img src={props.logo} alt={props.title} />
+            </div>
             <div className={styles.Info}>
                 <div className={styles.RankTitle}>
                     <h4 className='Hoverable'>{props.title}</h4>
@@ -40,12 +40,5 @@ function TechnologyCard(props) {
         </div>
     );
 }
-
-TechnologyCard.defaultProps = {
-    logo: 'https://via.placeholder.com/150',
-    title: 'Technology',
-    description: 'This is a technology card',
-    scale: 2.5 // Default scale value
-};
 
 export default TechnologyCard;

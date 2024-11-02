@@ -1,6 +1,6 @@
 import styles from './Technologies.module.css';
 import TechnologyCard from "../technologyCard/TechnologyCard";
-import technologiesData from '../../data/technologiesData';
+import TechnologiesList from '../../data/TechnologiesList';
 import { useState } from "react";
 
 function Technologies() {
@@ -11,8 +11,8 @@ function Technologies() {
     };
 
     const filteredTechnologies = seeAll
-        ? technologiesData
-        : technologiesData.filter(tech => tech.top);
+        ? TechnologiesList()
+        : TechnologiesList().filter(tech => tech.top);
 
     return (
         <div className={styles.Technologies}>

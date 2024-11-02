@@ -2,7 +2,8 @@
   {
     "title": "Spring",
     "description": "Java framework for enterprise applications",
-    "logo": "/logos/technologies/spring-logo.png",
+    "logo": "",
+    "logo_title": "spring-logo.png",
     "scale": 4,
     "top": true,
     "tags": ["Java", "Framework", "Enterprise"]
@@ -10,7 +11,8 @@
   {
     "title": "Java",
     "description": "Java programming language",
-    "logo": "/logos/technologies/java-logo.png",
+    "logo": "",
+    "logo_title": "java-logo.png",
     "scale": 5,
     "top": true,
     "tags": ["Object Oriented Programming Languages", "Backend"]
@@ -18,7 +20,8 @@
   {
     "title": "React",
     "description": "JavaScript library for building user interfaces",
-    "logo": "/logos/technologies/react-logo.png",
+    "logo": "",
+    "logo_title": "react-logo.png",
     "scale": 3.5,
     "top": true,
     "tags": ["JavaScript", "Library", "Frontend"]
@@ -26,7 +29,8 @@
   {
     "title": "Docker",
     "description": "Containerization platform",
-    "logo": "/logos/technologies/docker-logo.png",
+    "logo": "",
+    "logo_title": "docker-logo.png",
     "scale": 4,
     "top": true,
     "tags": ["Containerization", "DevOps"]
@@ -34,7 +38,8 @@
   {
     "title": "Git",
     "description": "Version control system",
-    "logo": "/logos/technologies/git-logo.png",
+    "logo": "",
+    "logo_title": "git-logo.png",
     "scale": 4.5,
     "top": true,
     "tags": ["Version Control", "DevOps"]
@@ -42,7 +47,8 @@
   {
     "title": "HTML",
     "description": "Hypertext Markup Language",
-    "logo": "/logos/technologies/html-logo.png",
+    "logo": "",
+    "logo_title": "html-logo.png",
     "scale": 4,
     "top": true,
     "tags": ["Markup Language", "Frontend"]
@@ -50,7 +56,8 @@
   {
     "title": "CSS",
     "description": "Cascading Style Sheets",
-    "logo": "/logos/technologies/css-logo.png",
+    "logo": "",
+    "logo_title": "css-logo.png",
     "scale": 4,
     "top": true,
     "tags": ["Style Sheets", "Frontend"]
@@ -58,7 +65,8 @@
   {
     "title": "JavaScript",
     "description": "Programming language",
-    "logo": "/logos/technologies/javascript-logo.png",
+    "logo": "",
+    "logo_title": "javascript-logo.png",
     "scale": 4,
     "top": true,
     "tags": ["Programming Languages", "Frontend", "Backend"]
@@ -66,7 +74,8 @@
   {
     "title": "C",
     "description": "General-purpose programming language",
-    "logo": "/logos/technologies/c-logo.png",
+    "logo": "",
+    "logo_title": "c-logo.png",
     "scale": 3.5,
     "top": false,
     "tags": ["Programming Languages", "System Programming"]
@@ -74,7 +83,8 @@
   {
     "title": "C++",
     "description": "Object-oriented programming language",
-    "logo": "/logos/technologies/c-pp-logo.png",
+    "logo": "",
+    "logo_title": "c-pp-logo.png",
     "scale": 3.5,
     "top": false,
     "tags": ["Programming Languages", "System Programming"]
@@ -82,7 +92,8 @@
   {
     "title": "Python",
     "description": "High-level programming language",
-    "logo": "/logos/technologies/python-logo.png",
+    "logo": "",
+    "logo_title": "python-logo.png",
     "scale": 3.5,
     "top": false,
     "tags": ["Programming Languages", "Backend", "Data Science"]
@@ -90,7 +101,8 @@
   {
     "title": "C#",
     "description": "Microsoft's programming language",
-    "logo": "/logos/technologies/c-sharp-logo.png",
+    "logo": "",
+    "logo_title": "c-sharp-logo.png",
     "scale": 4,
     "top": false,
     "tags": ["Object Oriented Programming Languages", "Backend"]
@@ -98,7 +110,8 @@
   {
     "title": "Assembly",
     "description": "Low-level programming language",
-    "logo": "/logos/technologies/assembly-logo.png",
+    "logo": "",
+    "logo_title": "assembly-logo.png",
     "scale": 1.5,
     "top": false,
     "tags": ["Programming Languages", "System Programming"]
@@ -106,7 +119,8 @@
   {
     "title": "UNIX",
     "description": "Operating system",
-    "logo": "/logos/technologies/unix-logo.jpg",
+    "logo": "",
+    "logo_title": "unix-logo.jpg",
     "scale": 4,
     "top": false,
     "tags": ["Operating System", "System Programming"]
@@ -114,7 +128,8 @@
   {
     "title": "Linux",
     "description": "Open-source operating system",
-    "logo": "/logos/technologies/linux-logo.png",
+    "logo": "",
+    "logo_title": "linux-logo.png",
     "scale": 4,
     "top": false,
     "tags": ["Operating System", "System Programming"]
@@ -122,7 +137,8 @@
   {
     "title": "LaTeX",
     "description": "Document preparation system",
-    "logo": "/logos/technologies/latex-logo.png",
+    "logo": "",
+    "logo_title": "latex-logo.png",
     "scale": 3.5,
     "top": false,
     "tags": ["Document Preparation", "Typesetting"]
@@ -130,7 +146,8 @@
   {
     "title": "MATLAB",
     "description": "Numerical computing environment",
-    "logo": "/logos/technologies/matlab-logo.png",
+    "logo": "",
+    "logo_title": "matlab-logo.png",
     "scale": 4,
     "top": false,
     "tags": ["Numerical Computing", "Data Science"]
@@ -138,7 +155,8 @@
   {
     "title": "SQL",
     "description": "Database query language",
-    "logo": "/logos/technologies/sql-logo.png",
+    "logo": "",
+    "logo_title": "sql-logo.png",
     "scale": 4.5,
     "top": false,
     "tags": ["Query Language"]
@@ -146,7 +164,8 @@
   {
     "title": "NoSQL",
     "description": "Non-relational database",
-    "logo": "/logos/technologies/cassandra-logo.png",
+    "logo": "",
+    "logo_title": "cassandra-logo.png",
     "scale": 3.5,
     "top": false,
     "tags": ["Non-relational"]
