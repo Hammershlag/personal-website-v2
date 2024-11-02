@@ -1,16 +1,33 @@
 {
   "files": {
     "main.css": "/personal-website-v2/static/css/main.7de09ca3.css",
-    "main.js": "/personal-website-v2/static/js/main.6570eb45.js",
+    "main.js": "/personal-website-v2/static/js/main.8880b194.js",
     "static/js/453.5e5d89ec.chunk.js": "/personal-website-v2/static/js/453.5e5d89ec.chunk.js",
     "static/media/logo1024.png": "/personal-website-v2/static/media/logo1024.547e02811daa9d36697f.png",
+    "static/media/matlab-logo.png": "/personal-website-v2/static/media/matlab-logo.d06a587847a150f708be.png",
+    "static/media/javascript-logo.png": "/personal-website-v2/static/media/javascript-logo.58b3f5d94e933a171bae.png",
+    "static/media/linux-logo.png": "/personal-website-v2/static/media/linux-logo.a37cbbb6b41af5ceb9f7.png",
+    "static/media/python-logo.png": "/personal-website-v2/static/media/python-logo.52d7bb207f9868b90e39.png",
+    "static/media/docker-logo.png": "/personal-website-v2/static/media/docker-logo.3863889e131628c7a9f2.png",
+    "static/media/java-logo.png": "/personal-website-v2/static/media/java-logo.44b65100370243570faa.png",
+    "static/media/spring-logo.png": "/personal-website-v2/static/media/spring-logo.e5ee5be91923b8895387.png",
+    "static/media/assembly-logo.png": "/personal-website-v2/static/media/assembly-logo.f74ee4ddafd01b984fc9.png",
+    "static/media/c-sharp-logo.png": "/personal-website-v2/static/media/c-sharp-logo.7f7159aad7bc573d9ddf.png",
+    "static/media/sql-logo.png": "/personal-website-v2/static/media/sql-logo.714b6946b1cd665c12e9.png",
+    "static/media/cassandra-logo.png": "/personal-website-v2/static/media/cassandra-logo.72d6222e81d408aa7c26.png",
+    "static/media/c-logo.png": "/personal-website-v2/static/media/c-logo.30e8acff157f8fa06702.png",
+    "static/media/unix-logo.jpg": "/personal-website-v2/static/media/unix-logo.617d90819392cc6165e9.jpg",
+    "static/media/git-logo.png": "/personal-website-v2/static/media/git-logo.d45f1900d8999721399f.png",
+    "static/media/css-logo.png": "/personal-website-v2/static/media/css-logo.bc75ccc78e3bf74f8aed.png",
+    "static/media/react-logo.png": "/personal-website-v2/static/media/react-logo.ef29629721a8f4c5d13b.png",
+    "static/media/c-pp-logo.png": "/personal-website-v2/static/media/c-pp-logo.01601dda1e4a1865c51b.png",
     "index.html": "/personal-website-v2/index.html",
     "main.7de09ca3.css.map": "/personal-website-v2/static/css/main.7de09ca3.css.map",
-    "main.6570eb45.js.map": "/personal-website-v2/static/js/main.6570eb45.js.map",
+    "main.8880b194.js.map": "/personal-website-v2/static/js/main.8880b194.js.map",
     "453.5e5d89ec.chunk.js.map": "/personal-website-v2/static/js/453.5e5d89ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7de09ca3.css",
-    "static/js/main.6570eb45.js"
+    "static/js/main.8880b194.js"
   ]
 }
