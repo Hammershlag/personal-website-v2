@@ -6,7 +6,9 @@ import NavButton from "../navButton/NavButton";
 
 function Navbar(props) {
     const navRef = useRef(null);
+    const menuRef = useRef(null);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleScroll = (event, href) => {
         event.preventDefault();
@@ -22,13 +24,23 @@ function Navbar(props) {
         });
     };
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsDesktop(window.innerWidth > 768);
-        };
+    const handleResize = () => {
+        setIsDesktop(window.innerWidth > 768);
+    };
 
+    const handleClickOutside = (event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+            setIsMenuOpen(false);
+        }
+    };
+
+    useEffect(() => {
         window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
     }, []);
 
     return (
@@ -44,7 +56,7 @@ function Navbar(props) {
                     </div>
                 </div>
 
-                <div className={styles.LeftSection}>
+                <div className={styles.RightSection}>
                     {isDesktop ? (
                         <div className={`${styles.Links} ${styles.Desktop}`}>
                             <NavButton href="#about" text="About" onClick={handleScroll} active={props.lastVisible === 'about'}/>
@@ -53,15 +65,16 @@ function Navbar(props) {
                             <NavButton href="#contact" text="Contact" onClick={handleScroll} active={props.lastVisible === 'contact'}/>
                         </div>
                     ) : (
-                        <div className={`${styles.Mobile}`}>
-                            <input type="checkbox" id="menu-toggle" className={styles.MenuToggleCheckbox}/>
-                            <label htmlFor="menu-toggle" className={styles.MenuToggle}>
-                                <div className={styles.Hamburger}>lalala</div>
-                            </label>
-                            <div className={styles.Menu}>
+                        <div className={`${styles.Mobile}`} ref={menuRef}>
+                            <div className={styles.MenuToggleIcon} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                                <span className={`${styles.TopLine} ${styles.Line} ${isMenuOpen ? styles.MenuToggleIconOpen : ""}`}/>
+                                <span className={`${styles.MiddleLine} ${styles.Line} ${isMenuOpen ? styles.MenuToggleIconOpen : ""}`}/>
+                                <span className={`${styles.BottomLine} ${styles.Line} ${isMenuOpen ? styles.MenuToggleIconOpen : ""}`}/>
+                            </div>
+                            <div className={`${styles.Menu} ${isMenuOpen ? styles.MenuOpen : ""}`}>
                                 <NavButton href="#about" text="About" onClick={handleScroll} active={props.lastVisible === 'about'}/>
                                 <NavButton href="#skills" text="Skills" onClick={handleScroll} active={props.lastVisible === 'skills'}/>
-                                <NavButton href="#projects" text="Projects" onClick={handleScroll} active={props.lastVisible === 'portfolio'}/>
+                                <NavButton href="#portfolio" text="Portfolio" onClick={handleScroll} active={props.lastVisible === 'portfolio'}/>
                                 <NavButton href="#contact" text="Contact" onClick={handleScroll} active={props.lastVisible === 'contact'}/>
                             </div>
                         </div>

@@ -50,30 +50,53 @@
 }
 
 .Menu {
-    display: none;
-    background-color: green;
-    position: relative;
-    top: 80px;
-}
-
-.MenuToggleCheckbox:checked ~ .Menu {
     display: flex;
     flex-direction: column;
+    background-color: var(--background_secondary);
+    position: absolute;
+    width: 100px;
     gap: 1rem;
+    top: 80px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.MenuToggleCheckbox {
-    position: relative;
-    top: 0;
-    right: 0;
+.MenuOpen {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.MenuToggle {
-    position: relative;
-    top: 0;
-    right: 0;
+.MenuToggleIcon {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    gap: 5px;
 }
 
+.Line {
+    transition: all 0.3s ease;
+}
+
+.MenuToggleIconOpen.TopLine {
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.MenuToggleIconOpen.MiddleLine {
+    opacity: 0;
+}
+
+.MenuToggleIconOpen.BottomLine {
+    transform: rotate(-45deg) translate(6px, -5px);
+}
+
+.Line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+/* Media query for responsive design */
 @media screen and (max-width: 768px) {
     .Desktop {
         display: none;
