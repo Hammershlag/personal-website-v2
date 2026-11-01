@@ -1,5 +1,11 @@
+/*
+ * Experience timeline, newest first.
+ * Optional per entry: description: ['paragraph', ...] for a longer write-up
+ * shown under the details.
+ */
 export const experience = [
     {
+        id: 'apreel',
         company: 'Apreel',
         client: 'Warta',
         roles: [
@@ -12,6 +18,7 @@ export const experience = [
         ],
     },
     {
+        id: 'freeport',
         company: 'Freeport Metrics / STX Next',
         client: 'Smile Train',
         roles: [

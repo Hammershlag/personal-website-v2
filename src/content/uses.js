@@ -1,5 +1,6 @@
 export const uses = [
     {
+        id: 'homelab',
         heading: 'Homelab, Cloud & Infrastructure',
         items: [
             { label: 'Infrastructure', value: 'Dockerized PostgreSQL/Oracle databases, Nginx reverse proxies.' },

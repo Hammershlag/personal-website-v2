@@ -1,4 +1,4 @@
-.Section + .Section {
+.Subsection + .Subsection {
     margin-top: var(--space-16);
 }
 

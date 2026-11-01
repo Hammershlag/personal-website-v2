@@ -7,7 +7,20 @@
 }
 
 html {
+    --scroll-offset: var(--space-8);
+
     background-color: var(--color-bg);
+}
+
+/* In-page scroll targets land below the sticky mobile nav. */
+[id] {
+    scroll-margin-top: var(--scroll-offset);
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        --scroll-offset: 7.5rem;
+    }
 }
 
 body {

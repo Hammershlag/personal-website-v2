@@ -1,4 +1,8 @@
-.PageHeader {
+.SectionHeader {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-8);
     margin-bottom: var(--space-12);
 }
 

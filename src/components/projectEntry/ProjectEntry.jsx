@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import styles from './ProjectEntry.module.css';
 import DetailList from '../detailList/DetailList';
 import VideoSlot from '../videoSlot/VideoSlot';
+import Prose from '../prose/Prose';
 import { snappy } from '../../motion/springs';
 
 const indexVariants = {
@@ -29,9 +30,9 @@ function ProjectEntry({ project, position }) {
                     {String(position).padStart(2, '0')}
                 </motion.span>
                 <div>
-                    <motion.h2 className={styles.Name} variants={titleVariants} transition={snappy}>
+                    <motion.h3 className={styles.Name} variants={titleVariants} transition={snappy}>
                         {project.name}
-                    </motion.h2>
+                    </motion.h3>
                     {project.subtitle && (
                         project.subtitleIsCode
                             ? <code className={styles.Code}>{project.subtitle}</code>
@@ -41,6 +42,7 @@ function ProjectEntry({ project, position }) {
             </header>
 
             <DetailList items={project.details} />
+            <Prose paragraphs={project.description} />
             {project.hasVideo && <VideoSlot title={project.name} />}
         </motion.article>
     );

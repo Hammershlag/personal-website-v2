@@ -1,0 +1,137 @@
+/*
+ * Three columns: dates | rail | content. One continuous 1px rail runs down the
+ * whole list; square markers sit on it for each company and each role.
+ */
+.Timeline {
+    --date-col: 8rem;
+    --rail-col: 2.5rem;
+    --detail-label-width: 6.5rem;
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.Timeline::before {
+    content: '';
+    position: absolute;
+    top: 0.6rem;
+    bottom: 0;
+    left: calc(var(--date-col) + var(--rail-col) / 2);
+    width: 1px;
+    background-color: var(--color-border-strong);
+}
+
+.Entry + .Entry {
+    margin-top: var(--space-16);
+}
+
+.Row {
+    display: grid;
+    grid-template-columns: var(--date-col) var(--rail-col) minmax(0, 1fr);
+    grid-template-areas: 'date rail body';
+}
+
+.Body {
+    grid-area: body;
+}
+
+.Date {
+    grid-area: date;
+    display: flex;
+    flex-direction: column;
+    padding-right: var(--space-2);
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.Marker,
+.RoleMarker {
+    grid-area: rail;
+    position: relative;
+    justify-self: center;
+    border: 1px solid var(--color-border-strong);
+    background-color: var(--color-bg);
+}
+
+.Marker {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-top: 0.6rem;
+}
+
+.Current {
+    border-color: var(--color-brand);
+    background-color: var(--color-brand);
+}
+
+.RoleMarker {
+    width: 0.4375rem;
+    height: 0.4375rem;
+    margin-top: 0.45rem;
+    border-color: var(--color-text-subtle);
+}
+
+.Company {
+    color: var(--color-text);
+    font-size: 1.625rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+}
+
+.Client {
+    margin-top: var(--space-1);
+    color: var(--color-text-subtle);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.Roles {
+    margin: var(--space-4) 0 var(--space-6);
+    padding: 0;
+    list-style: none;
+}
+
+.Role {
+    padding: var(--space-2) 0;
+}
+
+.RoleTitle {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+    .Timeline {
+        --rail-col: 1.75rem;
+    }
+
+    .Timeline::before {
+        left: calc(var(--rail-col) / 2);
+    }
+
+    .Row {
+        grid-template-columns: var(--rail-col) minmax(0, 1fr);
+        grid-template-areas:
+            'rail date'
+            'rail body';
+    }
+
+    .Date {
+        flex-direction: row;
+        gap: var(--space-2);
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .Date span + span::before {
+        content: '– ';
+    }
+}

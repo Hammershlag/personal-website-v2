@@ -1,3 +1,8 @@
+/*
+ * Projects & research, in display order.
+ * Optional per project: description: ['paragraph', ...] for a longer write-up
+ * shown under the details.
+ */
 export const projects = [
     {
         id: 'travelaide',

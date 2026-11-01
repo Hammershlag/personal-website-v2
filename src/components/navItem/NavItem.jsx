@@ -1,36 +1,35 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import styles from './NavItem.module.css';
+import { useActiveSection } from '../../context/ActiveSectionContext';
 import { indicator, snappy } from '../../motion/springs';
 
-function NavItem({ to, label }) {
+function NavItem({ to, section, label }) {
+    const isActive = useActiveSection() === section;
+
     return (
         <li className={styles.NavItem}>
-            <NavLink
+            <Link
                 to={to}
-                end={to === '/'}
-                className={({ isActive }) => `${styles.Link} ${isActive ? styles.Active : ''}`}
+                className={`${styles.Link} ${isActive ? styles.Active : ''}`}
+                aria-current={isActive ? 'location' : undefined}
             >
-                {({ isActive }) => (
-                    <>
-                        {isActive && (
-                            <motion.span
-                                layoutId="nav-active-indicator"
-                                className={styles.Indicator}
-                                transition={indicator}
-                            />
-                        )}
-                        <motion.span
-                            className={styles.Label}
-                            whileHover={{ x: 3 }}
-                            transition={snappy}
-                        >
-                            {label}
-                        </motion.span>
-                    </>
+                {isActive && (
+                    <motion.span
+                        layoutId="nav-active-indicator"
+                        className={styles.Indicator}
+                        transition={indicator}
+                    />
                 )}
-            </NavLink>
+                <motion.span
+                    className={styles.Label}
+                    whileHover={{ x: 3 }}
+                    transition={snappy}
+                >
+                    {label}
+                </motion.span>
+            </Link>
         </li>
     );
 }

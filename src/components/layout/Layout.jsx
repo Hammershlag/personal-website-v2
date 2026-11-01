@@ -2,20 +2,25 @@ import { Outlet } from 'react-router-dom';
 
 import styles from './Layout.module.css';
 import Sidebar from '../sidebar/Sidebar';
-import useScrollToTopOnNavigate from '../../hooks/useScrollToTopOnNavigate';
+import { ActiveSectionProvider } from '../../context/ActiveSectionContext';
+import useScrollToRouteSection from '../../hooks/useScrollToRouteSection';
+import { sectionIds } from '../../content/profile';
 
-function Layout() {
-    useScrollToTopOnNavigate();
+function Layout({ children }) {
+    useScrollToRouteSection();
 
     return (
-        <div className={styles.Layout}>
-            <Sidebar />
-            <main className={styles.Content}>
-                <div className={styles.Inner}>
-                    <Outlet />
-                </div>
-            </main>
-        </div>
+        <ActiveSectionProvider sectionIds={sectionIds}>
+            <div className={styles.Layout}>
+                <Sidebar />
+                <main className={styles.Content}>
+                    <div className={styles.Inner}>
+                        {children}
+                    </div>
+                </main>
+                <Outlet />
+            </div>
+        </ActiveSectionProvider>
     );
 }
 
