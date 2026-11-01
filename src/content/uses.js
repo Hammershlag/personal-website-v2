@@ -1,3 +1,6 @@
+import freediving from '../static/freediving.jpg';
+
+// A group may carry a `photo`, shown in a column beside its rows.
 export const uses = [
     {
         id: 'homelab',
@@ -20,5 +23,10 @@ export const uses = [
             { label: 'Martial Arts', value: 'Karate practitioner since age five, kickboxing training, and former youth martial arts coach.' },
             { label: 'Cooking', value: 'Empirical approach to recipes (scratch-made butter chicken, strawberry ganache macarons).' },
         ],
+        photo: {
+            src: freediving,
+            alt: 'Tomasz freediving head-first into deep blue water beneath sun rays',
+            caption: 'Freediving',
+        },
     },
 ];

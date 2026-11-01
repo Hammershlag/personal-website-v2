@@ -10,3 +10,44 @@
     letter-spacing: -0.02em;
     line-height: 1.25;
 }
+
+/* Rows stack label over value so the text column keeps a readable width. */
+.WithMedia {
+    --detail-columns: 1fr;
+    --detail-gap: var(--space-1);
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 13rem;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        'heading media'
+        'body    media';
+    column-gap: var(--space-8);
+}
+
+.WithMedia .Heading {
+    grid-area: heading;
+}
+
+.WithMedia .Body {
+    grid-area: body;
+}
+
+.Media {
+    grid-area: media;
+}
+
+@media screen and (max-width: 700px) {
+    .WithMedia {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            'heading'
+            'media'
+            'body';
+    }
+
+    .Media {
+        margin-bottom: var(--space-6);
+    }
+}

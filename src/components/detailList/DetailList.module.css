@@ -4,8 +4,9 @@
 
 .Row {
     display: grid;
-    grid-template-columns: var(--detail-label-width, 10rem) 1fr;
-    gap: var(--space-6);
+    /* Containers can override these, e.g. to stack label over value. */
+    grid-template-columns: var(--detail-columns, var(--detail-label-width, 10rem) 1fr);
+    gap: var(--detail-gap, var(--space-6));
     padding: var(--space-4) 0;
     border-bottom: 1px solid var(--color-border);
 }

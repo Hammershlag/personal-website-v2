@@ -1,0 +1,39 @@
+.Photo {
+    margin: 0;
+}
+
+.Frame {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    border: 1px solid var(--color-border-strong);
+    background-color: var(--color-bg-raised);
+}
+
+/* Taller than the frame by twice the drift so the edges never show. */
+.Image {
+    position: absolute;
+    top: -6%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 112%;
+    object-fit: cover;
+    object-position: 50% 60%;
+}
+
+.Caption {
+    margin-top: var(--space-2);
+    color: var(--color-text-subtle);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* Stacked on phones: a wider crop so the photo doesn't take over the screen. */
+@media screen and (max-width: 700px) {
+    .Frame {
+        aspect-ratio: 4 / 3;
+    }
+}
