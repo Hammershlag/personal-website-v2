@@ -7,7 +7,9 @@ export const experience = [
     {
         id: 'apreel',
         company: 'Apreel',
-        client: 'Warta',
+        meta: [
+            { label: 'Client', value: 'Warta' },
+        ],
         roles: [
             { title: 'Full-Stack Software Developer', period: 'August 2026 – Present' },
         ],
@@ -19,8 +21,11 @@ export const experience = [
     },
     {
         id: 'freeport',
-        company: 'Freeport Metrics / STX Next',
-        client: 'Smile Train',
+        company: 'Freeport Metrics',
+        meta: [
+            { label: 'Project', value: 'STX Next' },
+            { label: 'Client', value: 'Smile Train' },
+        ],
         roles: [
             { title: 'Junior Software Developer', period: 'October 2025 – August 2026' },
             { title: 'Software Developer Intern', period: 'July 2025 – September 2025' },

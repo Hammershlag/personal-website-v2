@@ -21,11 +21,16 @@ function TimelineEntry({ entry }) {
             <div className={styles.Row}>
                 <span
                     className={`${styles.Marker} ${isCurrent ? styles.Current : ''}`}
+                    data-timeline-marker
                     aria-hidden="true"
                 />
                 <header className={styles.Body}>
                     <h3 className={styles.Company}>{entry.company}</h3>
-                    <p className={styles.Client}>Client: {entry.client}</p>
+                    <p className={styles.Meta}>
+                        {entry.meta.map((item) => (
+                            <span key={item.label}>{item.label}: {item.value}</span>
+                        ))}
+                    </p>
                 </header>
             </div>
 
@@ -33,7 +38,7 @@ function TimelineEntry({ entry }) {
                 {entry.roles.map((role) => (
                     <li key={role.title} className={`${styles.Row} ${styles.Role}`}>
                         <Period period={role.period} />
-                        <span className={styles.RoleMarker} aria-hidden="true" />
+                        <span className={styles.RoleMarker} aria-hidden="true" data-timeline-marker />
                         <p className={`${styles.Body} ${styles.RoleTitle}`}>{role.title}</p>
                     </li>
                 ))}

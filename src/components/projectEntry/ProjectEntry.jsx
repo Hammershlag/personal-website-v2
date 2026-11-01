@@ -1,9 +1,8 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import styles from './ProjectEntry.module.css';
 import DetailList from '../detailList/DetailList';
-import VideoSlot from '../videoSlot/VideoSlot';
-import Prose from '../prose/Prose';
 import { snappy } from '../../motion/springs';
 
 const indexVariants = {
@@ -16,7 +15,10 @@ const titleVariants = {
     hover: { x: 3 },
 };
 
+// Summary card in the Projects section; the title opens the project's own page.
 function ProjectEntry({ project, position }) {
+    const pinned = project.details.filter((item) => item.pinned);
+
     return (
         <motion.article
             id={project.id}
@@ -30,9 +32,14 @@ function ProjectEntry({ project, position }) {
                     {String(position).padStart(2, '0')}
                 </motion.span>
                 <div>
-                    <motion.h3 className={styles.Name} variants={titleVariants} transition={snappy}>
-                        {project.name}
-                    </motion.h3>
+                    <h3 className={styles.Name}>
+                        <Link to={`/projects/${project.id}`} className={styles.TitleLink}>
+                            <motion.span className={styles.NameText} variants={titleVariants} transition={snappy}>
+                                {project.name}
+                                <span className={styles.Arrow} aria-hidden="true"> →</span>
+                            </motion.span>
+                        </Link>
+                    </h3>
                     {project.subtitle && (
                         project.subtitleIsCode
                             ? <code className={styles.Code}>{project.subtitle}</code>
@@ -41,9 +48,7 @@ function ProjectEntry({ project, position }) {
                 </div>
             </header>
 
-            <DetailList items={project.details} />
-            <Prose paragraphs={project.description} />
-            {project.hasVideo && <VideoSlot title={project.name} />}
+            <DetailList items={pinned} />
         </motion.article>
     );
 }

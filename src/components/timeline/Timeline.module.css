@@ -1,26 +1,49 @@
 /*
  * Three columns: dates | rail | content. One continuous 1px rail runs down the
- * whole list; square markers sit on it for each company and each role.
+ * whole list; square markers sit on it for each company and each role, and a
+ * brand dot travels along it with the scroll position.
  */
 .Timeline {
     --date-col: 8rem;
     --rail-col: 2.5rem;
+    --rail-x: calc(var(--date-col) + var(--rail-col) / 2);
     --detail-label-width: 6.5rem;
 
     position: relative;
+}
+
+.Entries {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.Timeline::before {
-    content: '';
+/* Starts at the centre of the first company marker. */
+.Rail {
     position: absolute;
-    top: 0.6rem;
+    top: 0.975rem;
     bottom: 0;
-    left: calc(var(--date-col) + var(--rail-col) / 2);
+    left: var(--rail-x);
     width: 1px;
     background-color: var(--color-border-strong);
+}
+
+.RailFill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-brand);
+}
+
+.RailDot {
+    position: absolute;
+    left: 0.5px;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: var(--color-brand);
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .Entry + .Entry {
@@ -66,7 +89,6 @@
 
 .Current {
     border-color: var(--color-brand);
-    background-color: var(--color-brand);
 }
 
 .RoleMarker {
@@ -84,7 +106,10 @@
     line-height: 1.15;
 }
 
-.Client {
+.Meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-4);
     margin-top: var(--space-1);
     color: var(--color-text-subtle);
     font-family: var(--font-mono);
@@ -113,8 +138,8 @@
         --rail-col: 1.75rem;
     }
 
-    .Timeline::before {
-        left: calc(var(--rail-col) / 2);
+    .Timeline {
+        --rail-x: calc(var(--rail-col) / 2);
     }
 
     .Row {

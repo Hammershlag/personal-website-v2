@@ -1,7 +1,9 @@
 /*
  * Projects & research, in display order.
- * Optional per project: description: ['paragraph', ...] for a longer write-up
- * shown under the details.
+ * Each project has its own page at /projects/<id> with every detail row, the
+ * description and the video. Rows marked `pinned` also show in the Projects
+ * list on the main page.
+ * Optional per project: description: ['paragraph', ...] for a longer write-up.
  */
 export const projects = [
     {
@@ -10,9 +12,9 @@ export const projects = [
         subtitle: 'Agentic Travel Support System',
         hasVideo: true,
         details: [
-            { label: 'Type', value: 'Autonomous multi-agent travel planning assistant with graph orchestration.' },
+            { label: 'Type', pinned: true, value: 'Autonomous multi-agent travel planning assistant with graph orchestration.' },
             { label: 'Tech Stack', tags: ['Java', 'Spring Boot', 'LangChain4j', 'LangGraph4j'] },
-            { label: 'Award', value: '2nd Place Best Demonstration Award at PAAMS 2026 (Naples, Italy).', highlight: true },
+            { label: 'Award', value: '2nd Place Best Demonstration Award at PAAMS 2026 (Naples, Italy).', highlight: true, pinned: true },
             { label: 'Publication', value: 'Co-authored and published in Springer LNCS proceedings (PAAMS 2026).' },
         ],
     },
@@ -20,7 +22,7 @@ export const projects = [
         id: 'texas-holdem-rl',
         name: "Texas Hold'em Reinforcement Learning",
         details: [
-            { label: 'Type', value: "Reinforcement learning agent for Texas Hold'em poker focusing on probabilities and chip distributions." },
+            { label: 'Type', pinned: true, value: "Reinforcement learning agent for Texas Hold'em poker focusing on probabilities and chip distributions." },
             { label: 'Tech Stack', tags: ['Python'] },
         ],
     },
@@ -28,21 +30,21 @@ export const projects = [
         id: 'form-assistant',
         name: 'Form Assistant',
         details: [
-            { label: 'Type', value: 'Full-stack application utilizing a Large Language Model (LLM) to assist users in completing support forms.' },
+            { label: 'Type', pinned: true, value: 'Full-stack application utilizing a Large Language Model (LLM) to assist users in completing support forms.' },
         ],
     },
     {
         id: 'officely',
         name: 'Officely',
         details: [
-            { label: 'Type', value: 'Web platform for managing and renting office spaces. Includes user client, admin dashboard, and dedicated backend.' },
+            { label: 'Type', pinned: true, value: 'Web platform for managing and renting office spaces. Includes user client, admin dashboard, and dedicated backend.' },
         ],
     },
     {
         id: 'remarket',
         name: 'ReMarket',
         details: [
-            { label: 'Type', value: 'E-commerce web application with dedicated frontend and backend repositories.' },
+            { label: 'Type', pinned: true, value: 'E-commerce web application with dedicated frontend and backend repositories.' },
         ],
     },
     {
@@ -51,14 +53,14 @@ export const projects = [
         subtitle: 'generatory_losowe_wae',
         subtitleIsCode: true,
         details: [
-            { label: 'Type', value: 'Academic research project analyzing the performance differences between various random number generators within evolutionary algorithms.' },
+            { label: 'Type', pinned: true, value: 'Academic research project analyzing the performance differences between various random number generators within evolutionary algorithms.' },
         ],
     },
     {
         id: 'stock-market-predictor',
         name: 'Stock Market Predictor',
         details: [
-            { label: 'Type', value: 'Stock market prediction modeling project.' },
+            { label: 'Type', pinned: true, value: 'Stock market prediction modeling project.' },
         ],
     },
 ];

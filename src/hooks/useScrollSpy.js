@@ -3,7 +3,9 @@ import { useEffect, useState } from 'react';
 // A section becomes active once its top crosses this fraction of the viewport.
 const ACTIVATION_LINE = 0.3;
 
-function useScrollSpy(ids) {
+// `resetKey` re-measures immediately when it changes (e.g. after a route change
+// swaps the page content) instead of waiting for the next scroll.
+function useScrollSpy(ids, resetKey) {
     const [activeId, setActiveId] = useState(ids[0]);
 
     useEffect(() => {
@@ -45,7 +47,7 @@ function useScrollSpy(ids) {
                 cancelAnimationFrame(frame);
             }
         };
-    }, [ids]);
+    }, [ids, resetKey]);
 
     return activeId;
 }

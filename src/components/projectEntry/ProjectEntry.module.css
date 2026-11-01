@@ -23,6 +23,24 @@
     line-height: 1.15;
 }
 
+.NameText {
+    display: inline-block;
+}
+
+.TitleLink {
+    color: inherit;
+    text-decoration: none;
+}
+
+.TitleLink:hover {
+    color: var(--color-brand);
+}
+
+.Arrow {
+    color: var(--color-brand);
+    font-weight: 400;
+}
+
 .Subtitle {
     margin-top: var(--space-1);
     color: var(--color-text-muted);
