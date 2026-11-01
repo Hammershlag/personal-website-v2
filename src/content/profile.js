@@ -1,9 +1,10 @@
+import portrait from '../static/portrait.jpg';
+
 export const profile = {
     name: 'Tomasz Zbroszczyk',
     title: 'Full-Stack Software Engineer',
-    // To show your photo: put it in src/static/ and set e.g.
-    // photo: require('../static/portrait.jpg'),
-    photo: null,
+    // 4:5 crop (640x800, metadata stripped). Set to null to show the empty frame instead.
+    photo: portrait,
     contact: [
         { label: 'GitHub', href: 'https://github.com/Hammershlag' },
         { label: 'LinkedIn', href: 'https://www.linkedin.com/in/tomasz-zbroszczyk-61b316278/' },
