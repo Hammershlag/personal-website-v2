@@ -1,0 +1,34 @@
+.Portrait {
+    flex-shrink: 0;
+    width: 9rem;
+    margin: 0;
+}
+
+.Image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border: 1px solid var(--color-border-strong);
+    background-color: var(--color-bg-raised);
+}
+
+div.Image {
+    border-style: dashed;
+}
+
+.Label {
+    color: var(--color-text-subtle);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .Portrait {
+        width: 6.5rem;
+    }
+}

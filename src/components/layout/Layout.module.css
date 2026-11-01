@@ -1,0 +1,23 @@
+.Layout {
+    min-height: 100vh;
+}
+
+.Content {
+    margin-left: var(--sidebar-width);
+    min-height: 100vh;
+}
+
+.Inner {
+    max-width: var(--content-max-width);
+    padding: 0 var(--space-16);
+}
+
+@media screen and (max-width: 900px) {
+    .Content {
+        margin-left: 0;
+    }
+
+    .Inner {
+        padding: 0 var(--space-6);
+    }
+}

@@ -1,0 +1,24 @@
+.SectionHeader {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-8);
+    margin-bottom: var(--space-12);
+}
+
+.Index {
+    display: block;
+    margin-bottom: var(--space-4);
+    color: var(--color-brand);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+}
+
+.Title {
+    color: var(--color-text);
+    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+}

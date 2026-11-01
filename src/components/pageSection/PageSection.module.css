@@ -1,0 +1,16 @@
+.PageSection {
+    padding: var(--space-24) 0;
+    border-top: 1px solid var(--color-border);
+    /* Land with the heading near the top instead of a full padding-height below it. */
+    scroll-margin-top: calc(var(--scroll-offset) - var(--space-16));
+}
+
+.PageSection:first-child {
+    border-top: none;
+}
+
+@media screen and (max-width: 900px) {
+    .PageSection {
+        padding: var(--space-16) 0;
+    }
+}

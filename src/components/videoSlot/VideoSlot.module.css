@@ -1,0 +1,25 @@
+.VideoSlot {
+    margin: var(--space-6) 0 0;
+}
+
+.Frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 1px dashed var(--color-border-strong);
+    background-color: var(--color-bg-raised);
+}
+
+iframe.Frame {
+    border: 1px solid var(--color-border);
+}
+
+.Label {
+    color: var(--color-text-subtle);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
