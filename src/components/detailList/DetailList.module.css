@@ -1,0 +1,38 @@
+.DetailList {
+    border-top: 1px solid var(--color-border);
+}
+
+.Row {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: var(--space-6);
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.Label {
+    padding-top: 0.2rem;
+    color: var(--color-text-subtle);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.Value {
+    color: var(--color-text);
+    font-size: 0.96875rem;
+}
+
+.Highlight {
+    padding-left: var(--space-3);
+    border-left: 2px solid var(--color-brand);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    .Row {
+        grid-template-columns: 1fr;
+        gap: var(--space-2);
+    }
+}

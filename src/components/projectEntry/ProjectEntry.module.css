@@ -1,0 +1,38 @@
+.ProjectEntry + .ProjectEntry {
+    margin-top: var(--space-16);
+}
+
+.Header {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    align-items: baseline;
+    margin-bottom: var(--space-6);
+}
+
+.Index {
+    color: var(--color-brand);
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+}
+
+.Name {
+    color: var(--color-text);
+    font-size: 1.625rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+}
+
+.Subtitle {
+    margin-top: var(--space-1);
+    color: var(--color-text-muted);
+    font-size: 0.96875rem;
+}
+
+.Code {
+    display: inline-block;
+    margin-top: var(--space-2);
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+}
